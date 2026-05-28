@@ -1,3 +1,10 @@
+
+ Projekt 1: Redis Pub/Sub
+ChatController → ChatService → ChatRepository → Redis
+ 
+ 
+ 
+ 
  Chat-Anwendung mit Redis & Spring Boot
 Eine Echtzeit-Chat-Anwendung die Redis Pub/Sub Messaging mit Spring Boot demonstriert.
 
@@ -66,6 +73,31 @@ Spring Boot Beans – @Component, @Configuration, @Bean
 Docker Compose – Services automatisch starten und stoppen
 Entkoppelte Kommunikation – Sender und Empfänger kennen sich nicht direkt
 REST APIs – Endpoints mit Spring Boot erstellen 
+
+
+
+-----------------------------WEBSOCKET------------------------------------
+
+WebSocket ist eine dauerhafte Verbindung zwischen Browser und Server:
+
+Projekt 2: WebSocket Chat
+Browser → ChatWebSocketHandler → alle Browser
+
+
+--------------------------------------------------------------------------
+
+
+## Was ich gelernt habe
+
+### Redis Pub/Sub:
+- Nachrichten über Redis Kanäle senden
+- Services entkoppeln
+- Docker Compose
+
+### WebSocket Chat:
+- Echtzeit-Kommunikation zwischen Browsern
+- Mehrere Verbindungen gleichzeitig verwalten
+- Frontend mit HTML/CSS/JavaScript
 
 Autor
 Ciro Santamarina
