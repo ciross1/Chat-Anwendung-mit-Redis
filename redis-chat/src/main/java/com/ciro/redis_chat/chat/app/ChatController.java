@@ -36,7 +36,7 @@ public class ChatController {
     }
 
     @DeleteMapping("/delete")
-    public void deleteMessage(){
-        chatService.clearChat();
+    public String deleteMessage(){
+        return chatService.clearChat();
     }
 }
