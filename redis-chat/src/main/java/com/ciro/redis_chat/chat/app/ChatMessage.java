@@ -7,6 +7,11 @@ public class ChatMessage {
     private String timestamp;
 
 
+
+    // ← Leerer Konstruktor! Jackson braucht ihn um JSON zu lesen
+    public ChatMessage() {}
+
+
     //Konstruktor
     public ChatMessage(String user, String message, String timestamp){
         this.user = user;
@@ -14,6 +19,8 @@ public class ChatMessage {
         this.timestamp = timestamp;
 
     }
+
+
 
 
     //Getter
@@ -27,6 +34,23 @@ public class ChatMessage {
     public String getTimestamp(){
         return timestamp;
     }
+
+    //Setter
+
+
+    public void setTimestamp(String timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+
 
 
     @Override
