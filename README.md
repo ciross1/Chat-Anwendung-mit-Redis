@@ -24,7 +24,10 @@ redis-chat/
 ├── compose.yml                         # Docker Compose für Redis
 ├── pom.xml
 └── README.md
-🚀 Wie starten?
+
+
+
+Wie starten?
 Voraussetzungen
 Java 17 oder höher installiert
 Docker Desktop installiert und gestartet
@@ -37,9 +40,9 @@ cd Chat-Anwendung-mit-Redis
 2. Anwendung starten
 
 mvn spring-boot:run
-Redis startet automatisch über Docker Compose – kein manueller Start nötig! ✅
+Redis startet automatisch über Docker Compose – kein manueller Start nötig! 
 
-📡 Wie funktioniert es?
+Wie funktioniert es?
 Benutzer A sendet Nachricht
         │
         ▼
@@ -53,7 +56,7 @@ ChatPublisher → Redis "chat-kanal" → ChatReceiver
                                           │
                                           ▼
                               GET /chat/messages ← Benutzer B
-🔗 REST Endpoints
+ REST Endpoints
 Method	Endpoint	Beschreibung
 POST	/chat/send?user=Anna&message=Hallo	Nachricht senden
 GET	/chat/messages	Alle Nachrichten abrufen
@@ -62,7 +65,8 @@ Redis Pub/Sub – Nachrichten zwischen Services weiterleiten
 Spring Boot Beans – @Component, @Configuration, @Bean
 Docker Compose – Services automatisch starten und stoppen
 Entkoppelte Kommunikation – Sender und Empfänger kennen sich nicht direkt
-REST APIs – Endpoints mit Spring Boot erstellen
-👤 Autor
+REST APIs – Endpoints mit Spring Boot erstellen 
+
+Autor
 Ciro Santamarina
 GitHub: @ciross1
